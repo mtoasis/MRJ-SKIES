@@ -3,7 +3,7 @@ export const sections = [
     title: 'SKIS',
     imageUrl: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     id: 1,
-    linkUrl: 'shop/skies'
+    linkUrl: 'shop/skis'
   },
   {
     title: 'SNOWBOARDS',
