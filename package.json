@@ -1,5 +1,5 @@
 {
-  "name": "mrj-skies",
+  "name": "mrj-skis",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "reselect": "^4.0.0"
   },
   "scripts": {

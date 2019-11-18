@@ -1,7 +1,7 @@
 /* Used as starting data for ShopPage */
 
-export const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  skis: {
     id: 1,
     title: 'Skis',
     routeName: 'skis',
@@ -44,7 +44,7 @@ export const SHOP_DATA = [
       },
     ]
   },
-  {
+  snowboards: {
     id: 2,
     title: 'Snowboards',
     routeName: 'snowboards',
@@ -87,7 +87,7 @@ export const SHOP_DATA = [
       },
     ]
   },
-  {
+  clothings: {
     id: 3,
     title: 'Clothings',
     routeName: 'clothings',
@@ -130,7 +130,7 @@ export const SHOP_DATA = [
       },         
     ]
   },
-  {
+  accessories: {
     id: 4,
     title: 'Accessories',
     routeName: 'accessories',
@@ -173,7 +173,7 @@ export const SHOP_DATA = [
       },   
     ]
   },
-  {
+  sale:{
     id: 5,
     title: 'Sale',
     routeName: 'sale',
@@ -216,5 +216,6 @@ export const SHOP_DATA = [
       },   
     ]
   }
-];
+};
 
+export default SHOP_DATA
