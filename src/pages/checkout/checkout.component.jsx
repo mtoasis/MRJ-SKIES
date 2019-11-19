@@ -9,7 +9,10 @@ import CheckoutItem from '../../components/checkout-item/checkout-item.component
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component'
 
 
-const CheckoutPage = ({ cartItems, total }) => (
+const CheckoutPage = ({ cartItems, total }) => {
+    
+    const totalDisplay = total.toFixed(2)
+    return(
     <div className='checkout-page'>
         <div className='checkout-header'>
             <div className='header-block'>
@@ -38,7 +41,7 @@ const CheckoutPage = ({ cartItems, total }) => (
             )
         }
         <div className='total'>
-            <span>TOTAL: ${total}</span>
+            <span>TOTAL: ${totalDisplay}</span>
         </div>
         <div className='test-warning'>
             *Please use the following test credit card numbe for paylemts*
@@ -47,7 +50,7 @@ const CheckoutPage = ({ cartItems, total }) => (
         </div>
         <StripeCheckoutButton price={total} />
     </div>
-)
+)}
 
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
