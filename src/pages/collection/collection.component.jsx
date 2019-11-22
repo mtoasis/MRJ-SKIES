@@ -8,7 +8,7 @@ const CollectionPage = ({ collection }) => {
     const {title, items} = collection;
     return (
         <CollectionPageContainer>
-            <h2 className='title'>{title}</h2>
+            <h2>{title}</h2>
             <ItemsContainer>
                 {
                     items.map(item=> <CollectionItemContainer key={item.id} item={item} />)

@@ -16,7 +16,7 @@ import { connect } from 'react-redux'
 const Header = ({ currentUser, hidden, signOutStart }) => (
     <HeaderContainer>
         <LogoContainer to='/'>
-            <Logo className='logo' />
+            <Logo />
         </LogoContainer>
         <OptionsContainer>
             <OptionLink to='/shop'>
@@ -30,7 +30,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
                     SIGN OUT
                     </OptionContainer>
             ) : (
-                    <OptionLink className='option' to='/signin'>
+                    <OptionLink to='/signin'>
                         SIGN IN
                     </OptionLink>
                 )}
