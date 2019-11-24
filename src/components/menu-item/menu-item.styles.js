@@ -38,10 +38,9 @@ export const BackgroundImageContainer = styled.div`
     background-image: ${({ imageUrl }) => `url(${imageUrl})`}
 `
 
-export const MenuItemContainer = styled.div`
-height: ${({ size }) => (size ? '380px' : '240px')}
+export const MenuItemContainer = styled.div/*css*/ `
 min-width: 30%;
-overflow: hidden;
+height: ${({ size }) => size ? `380px` : `240px`}
 flex: 1 1 auto;
 display: flex;
 align-items: center;
@@ -49,24 +48,29 @@ justify-content: center;
 border: 1px solid black;
 margin: 0 7.5px 15px;
 overflow: hidden;
+&:first-child {
+    margin-right: 7.5px;
+  }
+
+  &:last-child {
+    margin-left: 7.5px;
+  }
+
 &:hover {
     cursor: pointer;
-    & .background-image {
+    
+    & ${BackgroundImageContainer}{
         transform: scale(1.1);
-        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.95);
     }
-    & .content {
+    & ${ContentContainer}{
         opacity: 0.9;
     }
+    
 }
-&:first-child {
-margin-right: 7.5px;
-}
-&:last-child {
-margin-left: 7.5px;
-}
+
 @media screen and (max-width: 800px) {
-height: 200px;
-}
+    height: 200px;
+    }
 `
 
