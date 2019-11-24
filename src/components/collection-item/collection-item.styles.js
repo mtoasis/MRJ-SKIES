@@ -7,6 +7,7 @@ export const BackgroundImage = styled.div`
   background-position: center;
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+
 `;
 
 export const CollectionItemContainer = styled.div`
@@ -32,6 +33,20 @@ export const CollectionItemContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    width: 40vw;
+
+    ${BackgroundImage} {
+      opacity: unset;
+    }
+    button {
+      opacity: 0.9;
+      display:flex;
+      min-width:unset;
+      padding:0 10px 0 10px;
     }
   }
 `;

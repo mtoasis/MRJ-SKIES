@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Logo } from '../../assets/crown.svg'
+import { ReactComponent as Logo } from '../../assets/Stickman Snowman.svg'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 import { createStructuredSelector } from 'reselect'
