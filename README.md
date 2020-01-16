@@ -1,5 +1,5 @@
 
-## Live: [http://mrj-chatapp.herokuapp.com/](http://mrj-chatapp.herokuapp.com/)
+## Live: [https://mrj-skis.herokuapp.com/](https://mrj-skis.herokuapp.com/)
 
 ## About this project
 
